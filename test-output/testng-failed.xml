@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="url" value="https://adactinhotelapp.com/"/>
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testmethod.AdactinExecution">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="browserlaunch"/>
+          <include name="beforeSuite"/>
+          <include name="loginWithInValidCredentias"/>
+          <include name="loginWithValidCredentias"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testmethod.AdactinExecution -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="testmethod.AdactinExecution">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="browserlaunch"/>
+          <include name="beforeSuite"/>
+          <include name="loginWithInValidCredentias"/>
+          <include name="loginWithValidCredentias"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testmethod.AdactinExecution -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
